@@ -1,1 +1,46 @@
 /** stylesheet for contact page of Bride To Home website **/
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+footer {
+    position: fixed;
+    display: grid;
+    bottom: 0;
+    left: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    width: 100vw;
+    flex-direction: column;
+    background-color: grey;
+
+}
+
+.top {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+}
+
+.top--images {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+
+}
+
+.bottom {
+    display: flex;
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+}
