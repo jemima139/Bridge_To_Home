@@ -75,12 +75,12 @@ nav {
 /* form */
 .form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 500px 1fr ;
+    grid-template-columns: 1fr 500px repeat(2, 1fr);
     grid-template-rows: 95px 1000px 95px;
     width: 100%;
     height: 1200px;
     /* background image settings for grid form */
-    background-image: url("img/homelesscamp.jpg");
+    background-image: url("img/homeless-girl.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,8 +91,8 @@ nav {
 .form {
     display: flex;
     flex-direction: column;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: white;
