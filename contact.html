@@ -21,7 +21,8 @@
     </nav>
     <main>
         <section class="form-container">
-            <form class="form">
+            <form class="form" name="contact-form" onsubmit="return validateForm()" method="post"
+                action="/action-contact.php">
                 <section class="form__colored-header"></section>
                 <section class="form--fname">
                     <label for="fname" class="label">First Name</label>

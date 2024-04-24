@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
 main {
@@ -25,57 +25,53 @@ main {
 
 /* nav bar from Lourdes */
 nav {
-   position: fixed;
-   display: inline;
-   background-color: white;
-   top: 0;
-   left: 0;
-   right: 0;
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
-   font-size: 25px;
-   z-index: 200;
+    position: fixed;
+    display: inline;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 25px;
+    z-index: 200;
 }
 
 .ul_1 {
     list-style-type: none;
     text-decoration: none;
-    
 }
 
 .li_1 {
     display: inline;
-    
 }
 
-.nav__link { 
+.nav__link {
     margin-right: 20px;
     margin-bottom: 30px;
     text-decoration: none;
-    color: #2a3f3f;
+    color: #2A3F3F;
     padding: 10px;
     justify-content: end;
-    
 }
 
 .nav__link:hover {
     text-decoration: underline;
-    
 }
 
 .nav__logo {
     position: relative;
-   width: 200px;
-   height: auto;
-   float: left;
-   margin-left: 20px;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
 }
 
 /* form */
 .form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 500px 1fr ;
+    grid-template-columns: repeat(2, 1fr) 500px 1fr;
     grid-template-rows: 95px 1000px 95px;
     width: 100%;
     height: 1200px;
@@ -85,7 +81,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    
+
 }
 
 .form {
@@ -129,7 +125,7 @@ nav {
 }
 
 .input {
-    
+
     width: 200px;
     height: 20px;
     border-radius: 10px;
@@ -161,7 +157,7 @@ form p {
     width: 100%;
     color: #467750;
     text-align: center;
-    
+
 }
 
 #submit {
@@ -178,7 +174,7 @@ form p {
 
 #submit:hover {
     background-color: #2a3f3f;
-    color:#e0e8e2;
+    color: #e0e8e2;
     border: 1px solid #467750;
     cursor: pointer;
 }
@@ -194,14 +190,14 @@ footer {
     background-color: #2a3f3f;
     font-size: 14px;
     margin-top: 200px;
-    
+
 }
 
 /* top section of footer */
 .top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
 }
 
 .top a {
@@ -222,18 +218,18 @@ footer {
 #logo {
     width: 150px;
     margin: 0px;
-    
+
 }
 
 .top--images--media img {
     width: 50px;
     margin: 0;
-    
+
 }
 
 .top--images--creds img {
     width: 120px;
-    
+
 }
 
 #charity-logo {
