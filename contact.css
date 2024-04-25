@@ -71,7 +71,7 @@ nav {
 /* form */
 .form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 500px 1fr;
+    grid-template-columns: repeat(2, 1fr) 500px repeat(2, 1fr);
     grid-template-rows: 95px 1000px 95px;
     width: 100%;
     height: 1200px;
@@ -99,9 +99,15 @@ nav {
 }
 
 .form__colored-header {
+    display: flex;
     background-color: #e0e8e2;
     width: 100%;
     height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #467750;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .form--fname {
@@ -163,7 +169,7 @@ form p {
 #submit {
     margin: 20px;
     width: 100px;
-    height: 50px;
+    height: 38px;
     font-size: 16px;
     background-color: #e0e8e2;
     color: #467750;
@@ -292,6 +298,44 @@ footer {
 .bottom hr {
     width: 95vw;
     margin-bottom: 15px;
+}
+
+/* phone screens */
+@media screen and (max-width: 430px) {
+    .form-container {
+        grid-template-columns: 0 500px repeat(2, 0);
+        grid-template-rows: 40px 1250px 0px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: white;
+        box-shadow: 5px 5px 10px #333;
+        border: 1px solid #e0e8e2;
+        z-index: 100;
+        margin: 182px 0 0;
+        overflow-x: hidden;
+    }
+    
+    footer {
+        margin-top: 0;
+    }
+
+    .tagline {
+        margin: 20px 0px 12px;
+        font-size: 12px;;
+    }
+    
 }
 
 /* tablet screens */

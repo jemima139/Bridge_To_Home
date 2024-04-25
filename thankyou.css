@@ -1,4 +1,3 @@
-/** stylesheet for contact page of Bride To Home website **/
 html {
     margin: 0;
     padding: 0;
@@ -72,255 +71,35 @@ nav {
     margin-left: 20px;
 }
 
-/* form */
-.form-container {
-    display: grid;
-    grid-template-columns: 1fr 500px repeat(2, 1fr);
-    grid-template-rows: 40px 1250px 95px;
-    width: 100%;
-    height: 1300px;
-    /* background image settings for grid form */
-    background-image: url("img/homeless-girl.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-
-}
-
-.form {
+/* main */
+.container {
     display: flex;
-    flex-direction: column;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: white;
-    box-shadow: 5px 5px 10px #333;
-    border: 1px solid #e0e8e2;
-    z-index: 100;
-    margin: 150px 0;
-}
-
-.form__colored-header {
-    display: flex;
-    background-color: #e0e8e2;
-    width: 100%;
-    height: 60px;
     justify-content: center;
     align-items: center;
-    color: #467750;
-    font-size: 20px;
+    width: 100vw;
+    height: 100%;
+}
+
+.container p {
+    font-size: 100px;
     font-weight: bold;
-    padding: 20px 0;
-}
-
-.tagline {
-    margin: 20px 0 12px;
-}
-
-.donate-btn {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: 50px 80px;
-    width: 100%;
-    gap: 5px;
-    margin: 30px 0 0;
-    justify-content: center;
-    
-}
-
-.btn {
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
-    background-color: #e0e8e2;
-    color: #467750;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 2px #999;
-    border: 1px solid grey;
-}
-
-.btn:hover {
-    background-color: #2a3f3f;
-    color: #e0e8e2;
-    border: 1px solid #467750;
-    cursor: pointer;
-}
-
-.label-amount {
-    color: #467750;
-    margin: 30px 10px;
-    text-align: right;
-}
-
-.input-amount {
-    width: 180px;
-    height: 20px;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #e0e8e2;
-    border: 1px solid #e0e8e2;
-    padding: 5px;
-    outline: none;
-}
-
-.input-amount:focus {
-    border: 2px solid #467750;
-}
-
-.form__section {
-    margin: 20px 50px 0;
-}
-
-.form--fname__header {
-    font-weight: bold;
-}
-
-.form--ccn {
-    margin: 20px 50px 0;
-}
-
-.form__line {
-    width: 100%;
-}
-
-.label {
-    display: inline-block;
-    width: 300px;
-    color: #467750;
-    margin-bottom: 5px;
-}
-
-.input {
-    width: 200px;
-    height: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #e0e8e2;
-    border: 1px solid #e0e8e2;
-    padding: 5px;
-    outline: none;
-}
-
-.input:focus {
-    border: 2px solid #467750;
-    width: 198px;
-}
-
-.input:focus {
-    border: 2px solid #467750;
-    width: 198px;
-}
-
-.input:focus:invalid {
-    border: 2px solid red;
-    width: 198px;
-}
-
-.mini-label {
-    width: 50px;
-    color: #467750;
-    margin-bottom: 5px;
-}
-
-.mini-input {
-    width: 75px;
-    height: 20px;
-    margin-left: 90px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #e0e8e2;
-    border: 1px solid #e0e8e2;
-    padding: 5px;
-    outline: none;
-}
-
-.mini-label--code {
-    width: 50px;
-    color: #467750;
-    margin-bottom: 5px;
-    margin-right: 220px;
-}
-
-.mini-input--code {
-    width: 75px;
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 0px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #e0e8e2;
-    border: 1px solid #e0e8e2;
-    padding: 5px;
-    outline: none;
-}
-
-.mini-input:focus {
-    border: 2px solid #467750;
-    width: 75px;
-}
-
-.mini-input:focus:invalid {
-    border: 2px solid red;
-    width: 75px;
-}
-
-#msg {
-    width: 380px;
-    height: 150px;
-    resize: none;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.form--info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form p {
-    width: 100%;
-    color: #467750;
-    text-align: center;
-
-}
-
-#submit {
-    margin: 20px;
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
-    background-color: #e0e8e2;
-    color: #467750;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 2px #999;
-    border: 1px solid grey;
-}
-
-#submit:hover {
-    background-color: #2a3f3f;
-    color: #e0e8e2;
-    border: 1px solid #467750;
-    cursor: pointer;
-}
-
-.support-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    color: #2a3f3f;
 }
 
 /* footer */
 footer {
     display: grid;
+    bottom: 0;
+    left: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 450px 250px;
     width: 100vw;
     background-color: #2a3f3f;
     font-size: 14px;
-    margin-top: 300px;
+    margin-top: 0px;
 
 }
+
 
 /* top section of footer */
 .top {
@@ -425,38 +204,6 @@ footer {
 
 /* phone screens */
 @media screen and (max-width: 430px) {
-    .form-container {
-        grid-template-columns: 0 500px repeat(2, 0);
-        grid-template-rows: 40px 1250px 95px;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-    
-    }
-    
-    .form {
-        display: flex;
-        flex-direction: column;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-color: white;
-        box-shadow: 5px 5px 10px #333;
-        border: 1px solid #e0e8e2;
-        z-index: 100;
-        margin: 150px 0;
-    }
-    
-    footer {
-        margin-top: 0;
-    }
-
-    .tagline {
-        margin: 20px 0px 12px;
-        font-size: 12px;;
-    }
     
 }
 
