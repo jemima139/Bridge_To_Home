@@ -21,8 +21,11 @@
     </nav>
     <main>
         <section class="form-container">
-            <form class="form" name="contact-form" onsubmit="return validateContactForm()" method="post" action="thankyou.html">
-                <section class="form__colored-header"><p>CONTACT FORM</p></section>
+            <form class="form" name="contact-form" onsubmit="return validateContactForm()" method="post"
+                action="thankyou.html">
+                <section class="form__colored-header">
+                    <p>CONTACT FORM</p>
+                </section>
                 <section class="form--fname">
                     <label for="fname" class="label">First Name</label>
                     <input id="fname" class="input" type="text" name="firstname">
@@ -95,10 +98,10 @@
                     <a href="">FAQ</a>
                 </div>
                 <div class="top--links__contactus">
-                    <a href="">Email</a>
-                    <a href="">Phone</a>
-                    <a href="">Mail</a>
-                    <a href="">Fax</a>
+                    <a id="email-popup" href="">Email</a>
+                    <a id="phone-popup" href="">Phone</a>
+                    <a id="mail-popup" href="">Mail</a>
+                    <a id="fax-popup" href="">Fax</a>
                     <a href=""></a>
                 </div>
             </section>
@@ -113,7 +116,7 @@
             <p></p>
         </section>
     </footer>
-    <script src="form.js"></script>
+    <script src="contactform.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,8 @@
     </nav>
     <main>
         <section class="form-container">
-            <form class="form" name="donate-form" onsubmit="return validateDonateForm()" method="post" action="thankyou.html">
+            <form class="form" name="donate-form" onsubmit="return validateDonateForm()" method="post"
+                action="thankyou.html">
                 <section class="form__colored-header">DONATION FORM</section>
                 <p class="tagline">Every dollar you give can provide shelter to a person in need</p>
                 <hr class="form__line">
@@ -30,7 +31,7 @@
                     <button type="button" class="btn" id="hundred">$100</button>
                     <button type="button" class="btn" id="ten">$10</button>
                     <label for="donate-amount" class="label-amount">Enter an amount:</label>
-                    <input class="input-amount" type="text" name="donate-amount" >
+                    <input class="input-amount" type="text" name="donate-amount">
                 </section>
                 <section class="form__section">
                     <p class="form--fname__header">BILLING INFORMATION</p>
@@ -43,25 +44,30 @@
                 </section>
                 <section class="form__section">
                     <label class="label" for="addr">Address</label>
-                    
+
                     <input class="input" type="text" name="addr" placeholder="1234 Example Road" required>
-                    
+
                 </section>
                 <section class="form__section">
                     <label class="label" for="country">Country</label>
                     <label class="mini-label" for="zipcode">Zip Code</label>
                     <input class="input" type="text" name="country" placeholder="United States" required>
-                    <input class="mini-input" type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" placeholder="12345" required>
+                    <input class="mini-input" type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}"
+                        placeholder="12345" required>
                 </section>
                 <section class="form__section">
                     <label class="label" for="ccn">Credit Card</label>
                     <label class="mini-label" for="exp">Expiration</label>
-                    <input class="input" type="text" name="ccn" inputmode="numeric" pattern="[0-9]{4}[\s][0-9]{4}[\s][0-9]{4}[\s][0-9]{4}" placeholder="xxxx xxxx xxxx xxxx" required>
-                    <input class="mini-input" type="text" name="exp" inputmode="numeric" pattern="[0-9]{2}\/[0-9]{2}" placeholder="01/01" required>
+                    <input class="input" type="text" name="ccn" inputmode="numeric"
+                        pattern="[0-9]{4}[\s][0-9]{4}[\s][0-9]{4}[\s][0-9]{4}" placeholder="xxxx xxxx xxxx xxxx"
+                        required>
+                    <input class="mini-input" type="text" name="exp" inputmode="numeric" pattern="[0-9]{2}\/[0-9]{2}"
+                        placeholder="01/01" required>
                 </section>
                 <section class="form__section">
                     <label class="mini-label--code" for="code">Security Code</label>
-                    <input class="mini-input--code" type="text" name="code" inputmode="numeric" pattern="[0-9]{4}" placeholder="1234" required>
+                    <input class="mini-input--code" type="text" name="code" inputmode="numeric" pattern="[0-9]{4}"
+                        placeholder="1234" required>
                 </section>
                 <section class="support-container">
                     <input id="submit" type="submit" value="Support">
@@ -120,10 +126,10 @@
                     <a href="">FAQ</a>
                 </div>
                 <div class="top--links__contactus">
-                    <a href="">Email</a>
-                    <a href="">Phone</a>
-                    <a href="">Mail</a>
-                    <a href="">Fax</a>
+                    <a id="email-popup" href="">Email</a>
+                    <a id="phone-popup" href="">Phone</a>
+                    <a id="mail-popup" href="">Mail</a>
+                    <a id="fax-popup" href="">Fax</a>
                     <a href=""></a>
                 </div>
             </section>

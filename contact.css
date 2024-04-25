@@ -1,4 +1,5 @@
 /** stylesheet for contact page of Bride To Home website **/
+/** comment **/
 html {
     margin: 0;
     padding: 0;
@@ -301,7 +302,7 @@ footer {
 }
 
 /* phone screens */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
     .form-container {
         grid-template-columns: 0 500px repeat(2, 0);
         grid-template-rows: 40px 1250px 0px;
@@ -309,9 +310,9 @@ footer {
         width: 100%;
         height: 100%;
         overflow-x: hidden;
-    
+
     }
-    
+
     .form {
         display: flex;
         flex-direction: column;
@@ -326,27 +327,40 @@ footer {
         margin: 182px 0 0;
         overflow-x: hidden;
     }
-    
+
     footer {
         margin-top: 0;
     }
 
     .tagline {
         margin: 20px 0px 12px;
-        font-size: 12px;;
+        font-size: 12px;
+        ;
     }
-    
+
+    .nav__link {
+        padding: 0;
+    }
+
+    .ul_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .li_1 {
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 /* tablet screens */
-@media screen and (min-width: 431px) and (max-width: 962px) {
+@media screen and (min-width: 461px) and (max-width: 962px) {
     footer {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 450px 250px;
         width: 100vw;
         flex-direction: column;
         font-size: 14px;
-
     }
 
     .top {
@@ -374,7 +388,48 @@ footer {
         margin-left: -17.5vw;
     }
 
+    nav {
+        position: fixed;
+        display: inline;
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 25px;
+    }
 
+    .ul_1 {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .li_1 {
+        display: inline;
+    }
+
+    .nav__link {
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: #2A3F3F;
+        padding: 10px;
+        justify-content: end;
+    }
+
+    .nav__link:hover {
+        text-decoration: underline;
+    }
+
+    .nav__logo {
+        position: relative;
+        width: 200px;
+        height: auto;
+        float: left;
+        margin-left: 20px;
+    }
 }
 
 /* desktop screens */
