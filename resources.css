@@ -2,8 +2,9 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
-  }
+    scroll-behavior: smooth !important;
 
+  }
 
   body {
     display: flex;
@@ -14,47 +15,70 @@ html {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+  
 
-  main {
-    width: 100vw;
-    height: 100vh;
-    flex: 1 1 auto;
+  /* Navigation Bar styles */
+nav {
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   font-size: 25px;
 }
-  
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 40px;
-    padding: 60px;
-  }
-  
-  .navbar li {
-    display: inline-block;
-    margin-right: 40px;
-    margin-top: 20px;
-  }
-  
-  .navbar a {
+
+.ul_1 {
+    list-style-type: none;
     text-decoration: none;
-    color: black;
+}
+
+.li_1 {
+    display: inline;
+}
+
+.nav__link { 
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #2a3f3f;
+    padding: 10px;
+    justify-content: end;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+
+.logo img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+}
+
+/* Media query for navbar (MOBILE) */
+@media screen and (max-width: 480px) {
+  .nav__link {
+      padding: 0;
   }
-  
-  .logo {
-    position: absolute; 
-    top: 5px; 
-    left: 20px;
+  .ul_1 {
+      display: flex;
+      flex-direction: column;
   }
-  
-  .logo img {
-    width: 250px;
-    height: auto;
+  .li_1 {
+      display: inline-block;
+      width: 100%;
   }
+}
+
+/* 3 box divs */
 
   .box-container {
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-between;
-    height:500px;
+    height:550px;
   }
 
   .box {
@@ -68,7 +92,13 @@ html {
     padding: 20px;
     background-color: #89c07e;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.5);
+  }
+
+  .box:hover {
+    box-shadow: 10px 10px 10px 10px rgba(2, 78, 20, 0.5);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
   }
   
   .box h2 {
@@ -81,6 +111,7 @@ html {
     height: 200px;
     border-radius: 5px;
   }
+
 
   .box button {
     padding: 10px 20px;
@@ -98,113 +129,153 @@ html {
     background-color: #4CAF50;
   }
 
+  .box-paragraph {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  /* Main section containers */
+
+  #main-section{
+    background: url(images/Portfolio.jpg) center no-repeat;
+  }
+
+  #second-section {
+    background: url(images/bckground.jpg) center no-repeat;
+  }
+
+  #third-section {
+    background: url(images/Portfolio.jpg) center no-repeat;
+  }
+
   .first-container {
-    font-size: 18px;
+    font-size: 20px;
     padding:  30px;
-    margin: 20vh;
+    margin: 200px;
   }
 
   .second-container {
     padding: 30px;
-    font-size: 18px;
-    margin: 20vh;
+    font-size: 20px;
+    margin: 200px;
   }
 
   .third-container {
     padding: 30px;
-    font-size: 18px;
-    margin: 20vh;
+    font-size: 20px;
+    margin: 200px;
+  }
+
+  .feedmypeople-h1, .shelter-h1, .mentalhealth-h1 {
+    font-size: 50px;
   }
 
   .feedmypeople-picture{
-    width: 100%;
+    width: 80%;
+    border-radius:10px;
   }
   
 .salvationarmy-picture {
-  width: 100%;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .quality-picture {
-  width: 100%;
+  width: 80%;
+  border-radius: 10px;
 }
 
-/* Media query for mobile devices */
+/* Media query for resources page for mobile devices */
 @media screen and (max-width: 480px) {
 
-  .navbar {
-      padding: 0 10px;
+  .box-container {
+    height: auto;
+    margin-top: 20px;
   }
-  
-  .navbar li {
-      margin-right: 5px; 
-  }
-  
-  .logo img {
-      width: 80px; 
-  }
-  
-  .box {
-      margin: 5px;
-      padding: 5px;
-      max-width: 200px;
-  }
-  
-  .box h2 {
-      font-size: 18px;
-  }
-  
-  .box img {
-      max-height: 100px;
-  }
-  
-  .box button {
-      padding: 4px 8px;
-      font-size: 10px;
-  }
-  
-  .first-container, .second-container, .third-container {
-      font-size: 12px;
-      padding: 5px;
-      margin: 5px;
-  }
+
+.box h2 {
+  font-size: 20px;
 }
 
-/* Media query for for tablets */
-@media only screen and (max-width: 768px) {
-  .navbar li {
-      margin-right: 10px;
+.box img {
+  height: 150px;
+}
+
+.box p {
+  font-size: 15px;
+}
+.first-container, .second-container, .third-container {
+  font-size: 16px;
+  margin: 20px; 
+  padding: 20px; 
+}
+
+}
+
+/* Media query for resources page tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .box-container {
+        height: auto;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .box h2 {
+        font-size: 24px;
+    }
+
+    .box img {
+        height: 180px;
+    }
+
+    .box-paragraph {
+        font-size: 18px;
+    }
+
+    .first-container, .second-container, .third-container {
+        font-size: 18px;
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .feedmypeople-h1, .shelter-h1, .mentalhealth-h1 {
+        font-size: 40px;
+    }
+}
+
+/* Media query for resources page desktop devices */
+@media screen and (min-width: 1025px) {
+  .box-container {
+      height: auto;
+      margin-top: 20px;
+      justify-content: space-between;
   }
-  
-  .logo img {
-      width: 100px;
-  }
-  
-  .box {
-      margin: 10px;
-      padding: 10px;
-      max-width: 250px;
-  }
-  
+
   .box h2 {
+      font-size: 28px;
+  }
+
+  .box img {
+      height: 200px;
+  }
+
+  .box-paragraph {
       font-size: 20px;
   }
-  
-  .box img {
-      max-height: 120px;
-  }
-  
-  .box button {
-      padding: 6px 12px; 
-      font-size: 12px;
-  }
-  
+
   .first-container, .second-container, .third-container {
-      font-size: 14px; 
-      padding: 10px; 
-      margin: 10px;
+      font-size: 20px;
+      margin: 50px;
+      padding: 30px;
+  }
+
+  .feedmypeople-h1, .shelter-h1, .mentalhealth-h1 {
+      font-size: 50px;
   }
 }
 
+
+/*Footer */
  footer {
   display: grid;
   bottom: 0;
@@ -307,8 +378,10 @@ html {
 }
 
 
-/*Tablet screens*/
- @media screen and (min-width: 431px) and (max-width: 962px) {
+/*Tablet screens for footer*/
+ @media screen and (min-width: 461px) and (max-width: 962px) {
+
+
   footer {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 450px 250px;
@@ -345,15 +418,15 @@ html {
 }
 
 
-/* desktop screens */
- @media screen and (min-width: 963px) {
+/* desktop screens for footer*/
+@media screen and (min-width: 963px) {
   footer {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 450px 250px;
       width: 100vw;
       flex-direction: column;
       font-size: 14px;
-  
+
   }
 
   .top {
@@ -364,7 +437,7 @@ html {
   }
 
   .top--images {
-      margin-left: 10vw;
+      margin-left: 8vw;
   }
 
   .top--links {
@@ -374,28 +447,30 @@ html {
       grid-column-start: 2;
       grid-column-end: 4;
       align-items: baseline;
-      justify-content: baseline;
       margin-top: 50px;
       background-color: #2a3f3f;
       text-align: center;
       margin: 0px 5vw;
       margin-top: 2vw;
       max-width: 630px;
-      
+
   }
 
   .top--links>a {
       max-width: 76px;
   }
 
-  .top--links__home, .top--links__donate, .top--links__aboutus, .top--links__contactus {
+  .top--links__home,
+  .top--links__donate,
+  .top--links__aboutus,
+  .top--links__contactus {
       display: inline;
       text-align: left;
       line-height: 50px;
       font-size: 12px;
       max-width: 96px;
+      margin-left: 10px;
   }
-
 
   .bottom {
       grid-column-start: 2;
@@ -406,6 +481,5 @@ html {
   .bottom hr {
       margin-left: -17.5vw;
   }
-
 }
 
