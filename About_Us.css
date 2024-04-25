@@ -11,20 +11,20 @@ body {
 
 nav {
     position: fixed;
-    display: inline;
    background-color: white;
    top: 0;
    left: 0;
    right: 0;
    display: flex;
    justify-content: space-between;
-   align-items: flex-end;
+   align-items: end;
    font-size: 25px;
 }
 
 .ul_1 {
     list-style-type: none;
     text-decoration: none;
+
 }
 
 .li_1 {
@@ -54,15 +54,42 @@ nav {
 
 
 /* About Us body css */
+
+.row {
+    display: flex;
+    padding-top: 200px;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+.pic_2 {
+    width: 95%;
+    height: auto;
+}
+
+.au_1 {
+    width: 95%;
+    height: auto;
+}
+
+.pic_3 {
+    width: 95%;
+    height: auto;
+}
+
 h1 {
     display: flex;
     justify-content: center;
-    padding: 250px 130px 10px 120px;
+    padding: 40px 130px 10px 120px;
+    font-size: 50px;
 }
 
 .statement {
     display: flex;
-    padding: 60px 60px 10px 60px;
+    padding: 50px 60px 10px 60px;
     justify-content: center;
     color: black;
 }
@@ -84,12 +111,21 @@ h1 {
 li {
     padding: 10px;
 }
+
+
 /* about us body css- end */
 
 
 
 
 /* footer by David */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    flex: 1 1 auto;
+}
+
 footer {
     display: grid;
     bottom: 0;
@@ -196,17 +232,58 @@ footer {
 
 .top--links__home, .top--links__donate, .top--links__aboutus, .top--links__contactus {
     display: none;
-} */
+} 
+
+
+/* media query for mobile  nav bar */
+@media screen and (max-width: 480px) {
+    .nav__link {
+        padding: 0;
+    }
+    
+    .ul_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .li_1 {
+        display: inline-block;
+        width: 100%;
+    }
+
+    /* images for mobile */
+    .row {
+        padding-top: 400px;
+    }
+
+}
+/* end media query for mobile nav bar */
+
+/* media query for tablet */
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .row {
+        padding-top: 400px;
+    }
+}
 
 /* tablet screens */
- @media screen and (min-width: 431px) and (max-width: 962px) {
+ @media screen and (min-width: 461px) and (max-width: 962px) {
+    
+    /* .ul_1 is for nav bar */
+    .ul_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer media query */
+
     footer {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 450px 250px;
         width: 100vw;
         flex-direction: column;
         font-size: 14px;
-    
     }
 
     .top {
@@ -233,8 +310,6 @@ footer {
     .bottom hr {
         margin-left: -17.5vw;
     }
-
-
 }
 
 /* desktop screens */
@@ -245,7 +320,7 @@ footer {
         width: 100vw;
         flex-direction: column;
         font-size: 14px;
-    
+
     }
 
     .top {
@@ -256,7 +331,7 @@ footer {
     }
 
     .top--images {
-        margin-left: 10vw;
+        margin-left: 8vw;
     }
 
     .top--links {
@@ -266,28 +341,30 @@ footer {
         grid-column-start: 2;
         grid-column-end: 4;
         align-items: baseline;
-        justify-content: baseline;
         margin-top: 50px;
         background-color: #2a3f3f;
         text-align: center;
         margin: 0px 5vw;
         margin-top: 2vw;
         max-width: 630px;
-        
+
     }
 
     .top--links>a {
         max-width: 76px;
     }
 
-    .top--links__home, .top--links__donate, .top--links__aboutus, .top--links__contactus {
+    .top--links__home,
+    .top--links__donate,
+    .top--links__aboutus,
+    .top--links__contactus {
         display: inline;
         text-align: left;
         line-height: 50px;
         font-size: 12px;
         max-width: 96px;
+        margin-left: 10px;
     }
-
 
     .bottom {
         grid-column-start: 2;
