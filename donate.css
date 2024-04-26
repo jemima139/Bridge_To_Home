@@ -252,12 +252,12 @@ nav {
     outline: none;
 }
 
-.mini-input:focus {
+.mini-input:focus, .mini-input--code:focus {
     border: 2px solid #467750;
     width: 75px;
 }
 
-.mini-input:focus:invalid {
+.mini-input:focus:invalid, .mini-input--code:focus:invalid {
     border: 2px solid red;
     width: 75px;
 }
@@ -460,7 +460,7 @@ footer {
 /* phone screens */
 @media screen and (max-width: 430px) {
     .form-container {
-        grid-template-columns: 0 500px repeat(2, 0);
+        grid-template-columns: 0 450px repeat(2, 0);
         grid-template-rows: 40px 1250px 95px;
         justify-content: center;
         width: 100%;
@@ -490,8 +490,31 @@ footer {
     .tagline {
         margin: 20px 0px 12px;
         font-size: 12px;
-        ;
+        
     }
+
+    .input {
+        width: 150px;
+    }
+
+    .label {
+        display: inline-block;
+        width: 260px;
+        color: #467750;
+        margin-bottom: 5px;
+    }
+    
+    .input:focus {
+        border: 2px solid #467750;
+        
+    }
+    
+    .input:focus:invalid {
+        border: 2px solid red;
+        width: 150px;
+    }
+    
+  
 
 }
 
