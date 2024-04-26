@@ -304,7 +304,7 @@ footer {
 /* phone screens */
 @media screen and (max-width: 460px) {
     .form-container {
-        grid-template-columns: 0 500px repeat(2, 0);
+        grid-template-columns: 0 450px repeat(2, 0);
         grid-template-rows: 40px 1250px 0px;
         justify-content: center;
         width: 100%;
