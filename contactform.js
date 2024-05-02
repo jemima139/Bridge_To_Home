@@ -1,3 +1,4 @@
+// Get 
 const emailPopup = document.querySelector("#email-popup");
 const phonePopup = document.querySelector("#phone-popup");
 const mailPopup = document.querySelector("#mail-popup");
